@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Items\Commands\Create\" />
+    <Folder Include="Items\Commands\GetAll\" />
+    <Folder Include="Items\Commands\Update\" />
+    <Folder Include="Items\Commands\Delete\" />
+    <Folder Include="Items\Commands\Get\" />
+    <Folder Include="Lists\Create\" />
+    <Folder Include="Lists\Delete\" />
+    <Folder Include="Lists\EventHandlers\" />
+    <Folder Include="Lists\Get\" />
+    <Folder Include="Lists\Queries\" />
+    <Folder Include="Lists\Update\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DomainDrivenDesign.Example.Domain\DomainDrivenDesign.Example.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

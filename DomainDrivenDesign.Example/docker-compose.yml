@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  domaindrivendesign.example.presentation.web.api:
+    image: ${DOCKER_REGISTRY-}domaindrivendesignexamplepresentationwebapi
+    build:
+      context: .
+      dockerfile: DomainDrivenDesign.Example.Web.Api/Dockerfile
