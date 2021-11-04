@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DomainDrivenDesign.Example.Domain.Entities
 {
+
     public class Item
     {
         public ItemId Id { get; set; }

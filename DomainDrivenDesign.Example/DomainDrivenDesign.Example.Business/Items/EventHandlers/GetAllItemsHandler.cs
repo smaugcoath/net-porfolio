@@ -34,7 +34,7 @@ namespace DomainDrivenDesign.Example.Application.Items.EventHandlers
                 {
                     Id = x.Id.Id,
                     Details = x.Details,
-                    IsDone = x.Status == Domain.Enums.EItemStatus.Active ? false : true
+                    IsDone = x.Status != Domain.Enums.EItemStatus.Active
                 })
             };
 

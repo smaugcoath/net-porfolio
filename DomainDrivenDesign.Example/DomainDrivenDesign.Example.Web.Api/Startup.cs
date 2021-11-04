@@ -1,3 +1,4 @@
+using Amazon.DynamoDBv2;
 using DomainDrivenDesign.Example.Application.Common;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -37,6 +38,7 @@ namespace DomainDrivenDesign.Example.Web.Api
             services.AddApplicationInsightsTelemetry();
 
             services.AddMediatR(typeof(IAssemblyMarker));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
